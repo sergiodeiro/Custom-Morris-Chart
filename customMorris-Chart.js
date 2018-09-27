@@ -4,21 +4,7 @@
 
     var line_chart = Morris.Line({
 	   element: "line-chart-condutor",
-	   data: [';
-	   $total = count($condutorRegister);
-	   $i = 0;
-	   $coma = ",";
-	   foreach($condutorRegister as $key => $nums):
-	   $i++;
-
-	   if($i==$total) {
-		$coma = "";
-	   }
-
-	   echo '{ y: "'.$key.'", a: '.$nums.' }'.$coma.' ';
-	   endforeach;
-	   
-	   echo '
+	   data: [
 	   ],
 	   xkey: "y",
 	   ykeys: ["a"],
@@ -29,7 +15,7 @@
 	   },
 	   pointFillColors: ["grenn"],
 	   pointStrokeColors: ["green"],
-       lineColors: ["green","green"],
+           lineColors: ["green","green"],
 	   labels: ["Passageiros cadastrados"],
 	   labelColor:"green",
 	   redraw: true
