@@ -23,4 +23,4 @@
 
 	line_chart_condutor.parent().attr("style", "");
     });
-   </script>';
+
